@@ -31,18 +31,13 @@ from telegram.constants import ParseMode, ChatAction
 import openai
 import sqlite3
 import re
+from configs import *
 
 
 logger = logging.getLogger(__name__)
 
 
 BASE_DIR = Path(__file__).parent.resolve()
-
-main_channel = "channelname"
-bot_username = "bot username"
-telegram_token = "TOKEN"
-openai_api_key = "KEY"
-admins = [] # Admins
 
 openai.api_key = openai_api_key
 
